@@ -12,8 +12,16 @@ def admin_login(username, password):
 
 
 def hows_the_weather(temperature):
-    # your code here
-    pass
+        if temperature < 40:
+            response = 'brisk'
+        elif temperature >= 40 and temperature <= 65:
+            response = 'a little chilly'
+        elif temperature > 85:
+            response = 'too dang hot'
+        else: 
+            response = 'perfect'
+        return f"It\'s {response} out there!"
+
 
 def fizzbuzz(num):
     # your code here
