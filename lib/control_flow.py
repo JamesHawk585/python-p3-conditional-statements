@@ -2,7 +2,7 @@
 
 def admin_login(username, password):
     try:
-        if username == 'admin' or username == 'ADMIN' and password == '12345':
+        if (username == 'admin' or username == 'ADMIN') and password == '12345':
             return 'Access granted'
         else:
              return 'Access denied'
